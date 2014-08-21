@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.biz.amf.service.model.ListType">
+		<field name="listTypeId" type="long" />
+		<field name="name" type="String" />
+		<field name="type" type="String" />
+	</model>
+</model-hints>

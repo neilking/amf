@@ -1,0 +1,1 @@
+create index IX_72F1F758 on listtype (name, type_);

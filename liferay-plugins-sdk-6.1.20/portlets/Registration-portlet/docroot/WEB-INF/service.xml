@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+<service-builder package-path="com.liferay.biz.amf.service">
+	<author>Neil Zhao Jin</author>
+	<namespace>amf</namespace>
+<!--  
+	<entity name="AmfUser" local-service="true" remote-service="true">
+
+		
+
+		<column name="AmfUserId" type="long" primary="true" />
+
+		
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		
+
+		<column name="passoword" type="String" />
+		<column name="username" type="String" />
+		<column name="emailAddress" type="String" />
+		<column name="birthday" type="Date" />
+		<column name="password" type="String" />
+		<column name="homePhone" type="String" />
+		<column name="mobilePhone" type="String" />
+		<column name="address1" type="String" />
+		<column name="address2" type="String" />
+		<column name="city" type="String" />
+		<column name="state" type="long" />
+		<column name="zipCode" type="String" />
+		<column name="securityQuestion" type="String" />
+		<column name="acceptedTou" type="boolean" />
+
+		<reference package-path="" entity="" />
+	</entity>
+-->
+	<entity name="ListType" local-service="true" remote-service="false" table="listtype">
+		<!-- columns -->
+		<column name="listTypeId" db-name="listTypeId" type="long" primary="true" />
+		<column name="name" db-name="name" type="String" />
+		<column name="type" db-name="type_" type="String" />
+
+		<!-- finders -->
+		<finder name="N_T" return-type="Collection">
+			<finder-column name="name" />
+			<finder-column name="type" />
+		</finder>
+	</entity>
+</service-builder>
